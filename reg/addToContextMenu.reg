@@ -1,0 +1,16 @@
+Windows Registry Editor Version 5.00
+
+; ##################################################################################################################
+[HKEY_CLASSES_ROOT\giffile\shell\Open with Something\command]                   ; *.gif
+[HKEY_CLASSES_ROOT\*\shell\Open with Something\command]                         ; *.*
+[HKEY_CLASSES_ROOT\Directory\shell\Open with Something\command]                 ; Folder
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Open with Something\command]      ; Folder background
+[HKEY_CLASSES_ROOT\DesktopBackground\shell\Open with Something\command]         ; Desktop Menu
+
+; ##################################################################################################################
+@="C:\\Program Files\\Something\\something.exe"                                 ; Run the command
+@="C:\\Program Files\\Something\\something.exe %1"                              ; Pass the selected file/folder as argument to the command
+
+; ##################################################################################################################
+
+; REF: https://www.howtogeek.com/107965/how-to-add-any-application-shortcut-to-windows-explorers-context-menu/
